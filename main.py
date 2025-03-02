@@ -1,4 +1,3 @@
-# main.py
 from agent import ColdCallAgent
 from utils import speak_text, listen_audio
 
@@ -22,12 +21,12 @@ def main():
         print("Invalid choice")
         return
 
-    # Optionally, use TTS to speak out the generated response
+   
     speak_text(response)
     
-    # Optionally, simulate a conversation by capturing user response via microphone:
+    
     user_input = listen_audio()
-    # You can now process user_input to update conversation state, re-prompt, etc.
+   
     print("User said:", user_input)
 
 if __name__ == "_main_":
